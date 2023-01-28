@@ -1,0 +1,22 @@
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+
+
+
+
+
++static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+
+
+

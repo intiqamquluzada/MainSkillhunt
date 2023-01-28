@@ -1,0 +1,12 @@
+{% for t in candidate %}
+<body style="background-color:red" >
+<div style="background-color:teal" align="center">
+<h1>Ad ve soyadi: {{ t.full_name }} </h1>
+    <h2 style="background-color:orange">Melumat: {{ t.description }} </h2>
+        <h3>Erazi: {{ t.location }} </h3>
+            <h4>Yerlesdirilme tarixi: {{ t.created_at }} </h4>
+                <h5>Tehsil derecesi: {{ t.degree }} </h5>
+
+</div>
+</body>
+{% endfor %}
